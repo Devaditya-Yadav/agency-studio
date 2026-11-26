@@ -1,0 +1,109 @@
+@import '../../brand-kit/tokens/design-tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--action-cta-bg);
+    outline-offset: 3px;
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    transition: background-color 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                color 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  ::selection {
+    background-color: rgba(139, 133, 99, 0.26);
+    color: var(--text-primary);
+  }
+}
+
+/* Signature LIID ESTUDIO Calligraphic Script Keyword */
+.liid-script-word {
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em !important;
+  line-height: 0.92;
+  display: inline-block;
+  font-size: 1.28em;
+  padding: 0 0.08em;
+}
+
+/* Mediterranean Dappled Window-Light & Tactile Paper Grain */
+.dappled-sunlight {
+  background-image:
+    radial-gradient(ellipse 55% 42% at 18% 22%, rgba(255, 255, 255, 0.55) 0%, transparent 65%),
+    radial-gradient(ellipse 48% 36% at 82% 68%, rgba(139, 133, 99, 0.11) 0%, transparent 70%),
+    linear-gradient(128deg, transparent 22%, rgba(42, 40, 32, 0.032) 38%, transparent 52%, rgba(42, 40, 32, 0.028) 68%, transparent 84%);
+}
+
+[data-theme="dark"] .dappled-sunlight {
+  background-image:
+    radial-gradient(ellipse 55% 42% at 18% 22%, rgba(174, 178, 145, 0.08) 0%, transparent 65%),
+    radial-gradient(ellipse 48% 36% at 82% 68%, rgba(201, 93, 51, 0.07) 0%, transparent 70%);
+}
+
+/* Travertine & Raw Linen Tactile Surface Accent */
+.travertine-surface {
+  background-image:
+    radial-gradient(circle at 24% 32%, rgba(255, 255, 255, 0.25) 0%, transparent 48%),
+    repeating-linear-gradient(
+      -14deg,
+      transparent,
+      transparent 14px,
+      rgba(139, 133, 99, 0.045) 14px,
+      rgba(139, 133, 99, 0.045) 15px
+    );
+}
+
+/* Specular Sunlight Sheen for Interactive 3D Atelier Cards */
+.atelier-sheen-card {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.atelier-sheen-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: var(--sheen-opacity, 0);
+  transition: opacity 0.35s ease;
+  background: radial-gradient(
+    360px circle at var(--sheen-x, 50%) var(--sheen-y, 50%),
+    rgba(250, 248, 244, 0.34),
+    transparent 65%
+  );
+}
+
+[data-theme="dark"] .atelier-sheen-card::after {
+  background: radial-gradient(
+    360px circle at var(--sheen-x, 50%) var(--sheen-y, 50%),
+    rgba(174, 178, 145, 0.16),
+    transparent 65%
+  );
+}
+
+/* Architectural Clip-Path Unroll Utility */
+.clip-unroll {
+  will-change: clip-path, transform;
+}

@@ -1,0 +1,126 @@
+/**
+ * LIID ESTUDIO (Concept Study) — Website & Digital Design Tokens
+ * Direction: Quiet Luxury / Conscious Boutique Atelier (60-30-10 Harmony)
+ * WCAG 2.1 AA/AAA Verified Token Architecture
+ */
+
+:root {
+  /* ==========================================================================
+     1. PRIMITIVE BRAND PALETTE (Quiet Luxury Mediterranean System)
+     ========================================================================== */
+
+  /* 60% Foundation — Sunlit Atelier Neutrals */
+  --liid-alabaster-50:  #FAF8F4; /* Primary Page Canvas */
+  --liid-linen-100:     #F2EFE9; /* Card & Elevated Section Surface */
+  --liid-oat-200:       #DEDAD0; /* Editorial Carousel / Feature Block Surface */
+  --liid-travertine-300:#C8C2B4; /* Hairline Dividers & Subtle Borders */
+  --liid-kraft-400:     #C9B39B; /* Stationery / Notebook Kraft Accent */
+
+  /* 30% Brand Core — Olive Essence & Botanical Moss */
+  --liid-sage-300:      #AEB291; /* Botanical Wax-Seal Sage (Soft Highlight) */
+  --liid-olive-500:     #8B8563; /* Signature Brand Olive ('ESENCIA' & Avatar) */
+  --liid-moss-700:      #555132; /* Deep Olive Moss (AAA Editorial Headings & Primary Btn) */
+  --liid-umber-900:     #2A2820; /* Espresso Umber (13.91:1 AAA Body Ink) */
+  --liid-umber-600:     #635F52; /* Muted Warm Umber (Secondary Copy) */
+
+  /* 10% Conscious Energy — Terracotta Clay & Warm Bronze */
+  --liid-terracotta-500:#B65028; /* Primary Conversion CTA & Brand Question Accent */
+  --liid-terracotta-700:#983E1B; /* Hover CTA & Accessible Editorial Terracotta Text (6.51:1 AA+) */
+  --liid-terracotta-100:#F5E8E1; /* Soft Terracotta Wash / Tag Background */
+  --liid-bronze-500:    #A67C5B; /* Warm Copper / Embossed Foil Detail */
+
+  /* Functional / Feedback Tokens (Harmonized to Earthy Studio Palette) */
+  --liid-success:       #4F683B; /* Botanical Leaf Success */
+  --liid-warning:       #B87A28; /* Warm Ochre Warning */
+  --liid-error:         #A43428; /* Venetian Crimson Error */
+
+  /* ==========================================================================
+     2. SEMANTIC WEBSITE TOKENS — LIGHT MODE ("Sunlit Atelier" Default)
+     ========================================================================== */
+  --bg-canvas:          var(--liid-alabaster-50);
+  --bg-surface:         var(--liid-linen-100);
+  --bg-editorial:       var(--liid-oat-200);
+  --bg-manifesto:       var(--liid-olive-500);
+
+  --text-primary:       var(--liid-umber-900);
+  --text-heading:       var(--liid-moss-700);
+  --text-secondary:     var(--liid-umber-600);
+  --text-on-brand:      var(--liid-alabaster-50);
+  --text-accent:        var(--liid-terracotta-700);
+
+  --action-primary-bg:  var(--liid-moss-700);
+  --action-primary-fg:  var(--liid-alabaster-50);
+  --action-cta-bg:      var(--liid-terracotta-500);
+  --action-cta-hover:   var(--liid-terracotta-700);
+  --action-cta-fg:      var(--liid-alabaster-50);
+
+  --border-subtle:      rgba(139, 133, 99, 0.20);
+  --border-strong:      var(--liid-travertine-300);
+
+  /* ==========================================================================
+     3. TYPOGRAPHY SYSTEM
+     ========================================================================== */
+  --font-display:       'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-script:        'Alex Brush', 'Pinyon Script', cursive;
+  --font-sans:          'Plus Jakarta Sans', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Fluid Editorial Scale */
+  --text-eyebrow:       0.75rem;   /* 12px, uppercase, tracking 0.25em */
+  --text-body-sm:       0.875rem;  /* 14px */
+  --text-body:          1rem;      /* 16px, line-height 1.7 */
+  --text-lead:          1.1875rem; /* 19px, line-height 1.65 */
+  --text-h3:            1.75rem;   /* 28px */
+  --text-h2:            2.5rem;    /* 40px */
+  --text-h1:            clamp(2.75rem, 5vw, 4.5rem);
+
+  /* ==========================================================================
+     4. ELEVATION, RADIUS & MOTION ("Calm Editorial Rhythm")
+     ========================================================================== */
+  --radius-none:        0px;
+  --radius-subtle:      4px;
+  --radius-card:        12px;
+  --radius-pill:        9999px;
+
+  --shadow-whisper:     0 8px 30px -10px rgba(42, 40, 32, 0.07);
+  --shadow-editorial:   0 20px 50px -18px rgba(42, 40, 32, 0.12);
+  --ease-atelier:       cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-calm:      500ms;
+
+  /* ==========================================================================
+     4B. LAYER 3 — COMPONENT TOKENS (Primitive -> Semantic -> Component)
+     ========================================================================== */
+  --preloader-bg:       var(--liid-olive-500);
+  --preloader-fg:       var(--liid-alabaster-50);
+  --progress-bar-bg:    var(--action-cta-bg);
+  --cursor-bg:          rgba(139, 133, 99, 0.16);
+  --cursor-border:      rgba(139, 133, 99, 0.55);
+  --cursor-fg:          var(--text-heading);
+  --card-surface-bg:    var(--bg-surface);
+  --card-border-color:  var(--border-subtle);
+  --marquee-bg:         var(--bg-surface);
+}
+
+/* ==========================================================================
+   5. SEMANTIC WEBSITE TOKENS — DARK MODE ("Evening Studio")
+   ========================================================================== */
+[data-theme="dark"] {
+  --bg-canvas:          #1C1B17;
+  --bg-surface:         #26241E;
+  --bg-editorial:       #312F26;
+  --bg-manifesto:       #423F29;
+
+  --text-primary:       #F2EFE9;
+  --text-heading:       #DEDAD0;
+  --text-secondary:     #B8B3A6;
+  --text-on-brand:      #FAF8F4;
+  --text-accent:        #E08560;
+
+  --action-primary-bg:  #AEB291;
+  --action-primary-fg:  #1C1B17;
+  --action-cta-bg:      #C95D33;
+  --action-cta-hover:   #DF6E42;
+  --action-cta-fg:      #FAF8F4;
+
+  --border-subtle:      rgba(222, 218, 208, 0.14);
+  --border-strong:      rgba(222, 218, 208, 0.28);
+}

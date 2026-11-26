@@ -1,0 +1,58 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "meta": {
+    "brand": "LIID ESTUDIO (Concept Study)",
+    "tagline": "Creative Essence",
+    "disclaimer": "Unofficial portfolio concept study using placeholder contact metadata.",
+    "location": "Spain",
+    "website": "https://studio.example.com",
+    "social": "@studio.concept",
+    "contact": {
+      "email": "hello@example.com",
+      "phone": "+34 600 000 000"
+    }
+  },
+  "color": {
+    "foundation": {
+      "alabaster-veil": { "$type": "color", "$value": "#FAF8F4", "$description": "60% primary website canvas" },
+      "porcelain-linen": { "$type": "color", "$value": "#F2EFE9", "$description": "Elevated cards & soft editorial sections" },
+      "oat-silk": { "$type": "color", "$value": "#DEDAD0", "$description": "Signature carousel & quote backdrop" },
+      "travertine-stone": { "$type": "color", "$value": "#C8C2B4", "$description": "Architectural hairlines & borders" },
+      "raw-kraft": { "$type": "color", "$value": "#C9B39B", "$description": "Physical stationery & linen notebook tone" }
+    },
+    "brand": {
+      "olive-essence": { "$type": "color", "$value": "#8B8563", "$description": "30% core identity olive — avatar & ESENCIA manifesto" },
+      "botanical-sage": { "$type": "color", "$value": "#AEB291", "$description": "Soft wax-seal monogram sage & dark-mode highlight" },
+      "deep-olive-moss": { "$type": "color", "$value": "#555132", "$description": "WCAG AAA (7.59:1) editorial display serif & primary button" },
+      "espresso-umber": { "$type": "color", "$value": "#2A2820", "$description": "WCAG AAA (13.91:1) primary body text ink" },
+      "warm-umber-muted": { "$type": "color", "$value": "#635F52", "$description": "Secondary captions & metadata" }
+    },
+    "accent": {
+      "conscious-terracotta": { "$type": "color", "$value": "#B65028", "$description": "10% emotional & conversion CTA accent" },
+      "deep-terracotta-clay": { "$type": "color", "$value": "#983E1B", "$description": "WCAG AA+ (6.51:1) accessible terracotta text & CTA hover" },
+      "terracotta-blush": { "$type": "color", "$value": "#F5E8E1", "$description": "Subtle warm badge & highlight wash" },
+      "warm-bronze-foil": { "$type": "color", "$value": "#A67C5B", "$description": "Embossed foil & metallic photography bridge" }
+    },
+    "evening-mode": {
+      "atelier-night": { "$type": "color", "$value": "#1C1B17", "$description": "Dark mode primary background" },
+      "olive-charcoal": { "$type": "color", "$value": "#26241E", "$description": "Dark mode elevated card surface" }
+    }
+  },
+  "typography": {
+    "display": {
+      "family": { "$type": "fontFamily", "$value": ["Cormorant Garamond", "Playfair Display", "Georgia", "serif"] },
+      "weights": [400, 500, 600],
+      "usage": "Wordmark (uppercase, 0.16em tracking), hero headlines, editorial statements"
+    },
+    "script": {
+      "family": { "$type": "fontFamily", "$value": ["Alex Brush", "Pinyon Script", "cursive"] },
+      "weights": [400],
+      "usage": "Single emotional focal keyword inline within serif headlines (e.g., 'Social media', 'Diseño visual', 'marca') and studio sign-off"
+    },
+    "sans": {
+      "family": { "$type": "fontFamily", "$value": ["Plus Jakarta Sans", "Montserrat", "sans-serif"] },
+      "weights": [300, 400, 500, 600],
+      "usage": "Uppercase eyebrows (0.26em tracking), service pillars, body copy, navigation, UI controls"
+    }
+  }
+}

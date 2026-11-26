@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIID ESTUDIO — Concept Social Media &amp; Stationery Kit Templates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --alabaster: #FAF8F4;
+      --linen: #F2EFE9;
+      --oat: #DEDAD0;
+      --travertine: #C8C2B4;
+      --olive: #8B8563;
+      --sage: #AEB291;
+      --moss: #555132;
+      --umber: #2A2820;
+      --muted: #635F52;
+      --terracotta: #B65028;
+      --clay: #983E1B;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-script: 'Alex Brush', cursive;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--alabaster);
+      color: var(--umber);
+      font-family: var(--font-sans);
+      padding: 48px 32px;
+      line-height: 1.6;
+    }
+    .container { max-width: 1180px; margin: 0 auto; }
+    .kit-header {
+      border-bottom: 1px solid var(--travertine);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .eyebrow {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.26em;
+      color: var(--olive);
+      font-weight: 500;
+    }
+    h1 {
+      font-family: var(--font-display);
+      font-size: 40px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--moss);
+      margin-top: 6px;
+    }
+    h2.section-title {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--moss);
+      margin: 44px 0 20px;
+    }
+
+    /* 1. Instagram 4:5 Carousel Templates */
+    .ig-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 28px;
+    }
+    .ig-card {
+      aspect-ratio: 4 / 5;
+      padding: 34px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 18px 40px -18px rgba(42, 40, 32, 0.14);
+    }
+    /* Soft organic dappled window-light shadow overlay */
+    .ig-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 20% 25%, rgba(255,255,255,0.32) 0%, transparent 55%),
+                  linear-gradient(135deg, rgba(42,40,32,0.05) 0%, transparent 45%, rgba(42,40,32,0.07) 100%);
+      pointer-events: none;
+    }
+    .ig-meta {
+      font-size: 10px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+    .ig-center {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      padding: 0 8px;
+    }
+    .script-word {
+      font-family: var(--font-script);
+      font-weight: 400;
+      font-size: 1.38em;
+      line-height: 1;
+      margin-left: 4px;
+    }
+
+    /* Variant A: Oat Silk Service Cover (Social media / Diseño visual) */
+    .ig-oat {
+      background: linear-gradient(160deg, #E2DFD4 0%, #D3CFC0 100%);
+      color: var(--moss);
+    }
+    .ig-oat .ig-title {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+    .ig-oat .ig-sub {
+      font-size: 13px;
+      color: var(--moss);
+      opacity: 0.88;
+      max-width: 240px;
+      margin: 0 auto;
+    }
+
+    /* Variant B: Olive Essence Manifesto Cover (ESENCIA) */
+    .ig-olive {
+      background: linear-gradient(155deg, #958F6D 0%, #7E7857 100%);
+      color: var(--alabaster);
+    }
+    .ig-olive .ig-manifesto {
+      font-family: var(--font-display);
+      font-size: 46px;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-top: 18px;
+    }
+
+    /* Variant C: Porcelain & Terracotta Thought Leadership */
+    .ig-porcelain {
+      background: linear-gradient(165deg, #F5F1EA 0%, #EAE3D8 100%);
+      color: var(--terracotta);
+    }
+    .ig-porcelain .ig-pill {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--clay);
+      margin-bottom: 14px;
+      display: block;
+    }
+    .ig-porcelain .ig-question {
+      font-family: var(--font-display);
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--terracotta);
+    }
+
+    /* 2. Boutique Business Cards (85x55mm proportion) */
+    .cards-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+    }
+    .biz-card {
+      aspect-ratio: 85 / 55;
+      border-radius: 4px;
+      padding: 28px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 16px 36px -16px rgba(42, 40, 32, 0.15);
+    }
+    .biz-front {
+      background: var(--olive);
+      color: var(--alabaster);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .biz-back {
+      background: var(--linen);
+      border: 1px solid var(--travertine);
+      color: var(--umber);
+    }
+
+    /* 3. Email Signature Preview */
+    .sig-box {
+      background: #FFFFFF;
+      border: 1px solid var(--travertine);
+      border-radius: 8px;
+      padding: 28px;
+      max-width: 640px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="kit-header">
+      <div>
+        <div class="eyebrow">LIID ESTUDIO • Unofficial Concept Study Assets</div>
+        <h1>Social Media &amp; Boutique Stationery Kit</h1>
+      </div>
+      <div class="eyebrow" style="color:var(--muted);">Portfolio Concept Study • Placeholder Details</div>
+    </header>
+
+    <h2 class="section-title">01. Signature Instagram 4:5 Carousel Templates</h2>
+    <div class="ig-grid">
+      <!-- Template 1: Oat Silk -->
+      <article class="ig-card ig-oat">
+        <div class="ig-meta" style="justify-content:center;">
+          <span>MARKETING CONSCIENTE</span>
+        </div>
+        <div class="ig-center">
+          <h3 class="ig-title">Diseño <span class="script-word">visual</span></h3>
+          <p class="ig-sub">Da <strong>forma</strong> a una idea para que <strong>comunique</strong> con coherencia.</p>
+        </div>
+        <div class="ig-meta" style="justify-content:center;">
+          <span>STUDIO.EXAMPLE.COM</span>
+        </div>
+      </article>
+
+      <!-- Template 2: Olive Essence Manifesto -->
+      <article class="ig-card ig-olive">
+        <div>
+          <div class="ig-meta">
+            <span>ANTES DE CONSTRUIR TU MARCA, SIÉNTELA.</span>
+            <span>STUDIO.EXAMPLE.COM</span>
+          </div>
+          <div class="ig-center" style="margin-top:36px;">
+            <div class="ig-manifesto">ESENCIA</div>
+          </div>
+        </div>
+        <div class="ig-meta">
+          <span>DISEÑO VISUAL • SOCIAL MEDIA • COMUNICACIÓN</span>
+          <span>@STUDIO.CONCEPT</span>
+        </div>
+      </article>
+
+      <!-- Template 3: Porcelain & Terracotta Question -->
+      <article class="ig-card ig-porcelain">
+        <div class="ig-meta" style="color:var(--olive);">
+          <span>LIID ESTUDIO</span>
+          <span>MARKETING CONSCIENTE</span>
+        </div>
+        <div class="ig-center">
+          <span class="ig-pill">Identidad de Marca</span>
+          <h3 class="ig-question">
+            ¿Tienes una<br/>
+            <span class="script-word">marca</span> o solo<br/>
+            un logo?
+          </h3>
+        </div>
+        <div class="ig-meta" style="color:var(--olive);">
+          <span>@STUDIO.CONCEPT</span>
+          <span>STUDIO.EXAMPLE.COM</span>
+        </div>
+      </article>
+    </div>
+
+    <h2 class="section-title">02. Boutique Print Business Card (85 × 55 mm)</h2>
+    <div class="cards-row">
+      <!-- Front -->
+      <div class="biz-card biz-front">
+        <svg viewBox="0 0 240 240" width="84" height="84" aria-label="LD Monogram">
+          <g fill="#F2EFE9">
+            <path d="M 73 56 H 93 V 58.6 H 87.6 V 137.4 H 126 C 132.5 137.4 135.4 133.5 137.2 123.5 H 139.6 L 138.4 140.2 H 73 V 137.6 H 79.8 V 58.6 H 73 Z"/>
+            <path d="M 99 84 H 124 C 151.5 84 169 101.8 169 126.5 C 169 151.8 150.2 169 122.5 169 H 99 V 166.3 H 121.5 C 145.2 166.3 160.2 150.2 160.2 126.5 C 160.2 102.6 145.4 86.7 122 86.7 H 111.2 V 131.5 H 103.6 V 86.7 H 99 Z"/>
+            <circle cx="107.4" cy="151.5" r="3.8"/>
+          </g>
+        </svg>
+        <div style="font-family:var(--font-display);letter-spacing:0.22em;font-size:15px;margin-top:6px;">LIID ESTUDIO</div>
+        <div style="font-size:10px;letter-spacing:0.26em;text-transform:uppercase;opacity:0.82;margin-top:4px;">CREATIVE ESSENCE</div>
+      </div>
+
+      <!-- Back -->
+      <div class="biz-card biz-back">
+        <div>
+          <div style="font-family:var(--font-display);font-size:24px;color:var(--moss);font-weight:500;">Creative Director</div>
+          <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--olive);">Boutique Studio • Dirección Creativa</div>
+        </div>
+        <div style="border-top:1px solid var(--travertine);padding-top:14px;display:flex;justify-content:space-between;align-items:flex-end;font-size:12px;color:var(--muted);">
+          <div>
+            <div>hello@example.com</div>
+            <div>+34 600 000 000</div>
+            <div>studio.example.com • @studio.concept</div>
+          </div>
+          <div style="font-style:italic;font-family:var(--font-display);font-size:15px;color:var(--clay);">
+            Concept Study • Spain
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">03. HTML Email Signature (Demo Placeholder)</h2>
+    <div class="sig-box">
+      <table cellpadding="0" cellspacing="0" border="0" style="font-family:'Plus Jakarta Sans',Arial,sans-serif;color:#2A2820;">
+        <tr>
+          <td style="padding-right:18px;border-right:1px solid #C8C2B4;vertical-align:middle;">
+            <div style="width:56px;height:56px;border-radius:50%;background:#8B8563;color:#FAF8F4;text-align:center;line-height:56px;font-family:Georgia,serif;font-size:20px;letter-spacing:1px;">
+              LD.
+            </div>
+          </td>
+          <td style="padding-left:18px;vertical-align:middle;">
+            <div style="font-family:Georgia,serif;font-size:19px;color:#555132;letter-spacing:0.04em;">Creative Director</div>
+            <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#8B8563;margin-bottom:8px;">
+              Concept Studio • LIID ESTUDIO
+            </div>
+            <div style="font-size:12px;color:#635F52;line-height:1.6;">
+              <a href="mailto:hello@example.com" style="color:#555132;text-decoration:none;">hello@example.com</a> &nbsp;•&nbsp; +34 600 000 000<br/>
+              <a href="https://studio.example.com" rel="noopener noreferrer" target="_blank" style="color:#983E1B;text-decoration:none;font-weight:500;">studio.example.com</a> &nbsp;•&nbsp;
+              <span style="color:#635F52;">@studio.concept</span>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
